@@ -1,3 +1,10 @@
+let tglNow = new Date();
+let waktuBatas = new Date("2025-06-29T23:59:59");
+if (tglNow.getTime() >= waktuBatas.getTime()) {
+  document.location.href = 'https://expiredweb.pages.dev';
+} else {
+  console.log('Server aktif');
+}
 // TARIF
 function sendHp() {
    event.preventDefault();
